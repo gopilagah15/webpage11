@@ -1,0 +1,75 @@
+body{
+    background-image: url(images/pic.jpg);
+    background-size: cover;
+    position: center;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+ 
+.progres img{ 
+    width: 80px;
+    margin: 500px 0 0 430px;
+}
+.progres{
+    display: flex;
+    justify-content: center; 
+}
+ul{
+    text-align: center; 
+    
+}
+ul li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+ul li p{
+    margin-left: 440px;
+    text-align: right; 
+}
+ul li i{
+    margin-left: 440px;
+    text-align: right; 
+}
+ul li .fa{
+    background: #ccc;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+ul li .fa::after{
+    content: '';
+    background-color: #ccc;
+    height: 5px;
+    width: 205px;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 110px;
+}
+.ul li :nth-child(3) .fa{
+    background: #148e14; 
+}
+.ul li :nth-child(3) .fa::after{
+    background: #148e14; 
+}
+.ul li :nth-child(1) .fa,
+.ul li :nth-child(1) .fa
+{
+    background: red;  
+}
+.ul li :nth-child(1) .fa::after,
+.ul li :nth-child(1) .fa::after
+{
+    background: green;  
+}
+ul li:first-child .fa::after{
+    width: 105px;
+    left: 100px;
+}
+ul li:last-child .fa::after{
+    width: 105px; 
+}
